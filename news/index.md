@@ -4,6 +4,20 @@
 
 ## cSEM 0.6.2
 
+- Fix bug in PLS-PM estimation of non-linear models involing
+  second-order constructs. Thanks Thanks to Kjell S. Slupphaug for this
+  contribution.
+
+- Fix smaller issue in the print function for
+  [`assess()`](https://floschuberth.github.io/cSEM/reference/assess.md).
+
+- Replace helper function from the matrixcalc package. Thanks to
+  Kjell S. Slupphaug for this contribution.
+
+- Replace the polycor package by a more efficient implementation to
+  calculate polychoric/polyserial correlations. Thanks to Kjell S.
+  Slupphaug who contributed this implementation.
+
 - Adjust p-value calculation in testMGD in case of permutation-based
   tests to prevent that p-values can be exactly 0. Thanks to Michael
 
