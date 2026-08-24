@@ -438,6 +438,9 @@ a
 #> ----------------------- Discriminant validity assessment -----------------------
 #> 
 #>  Heterotrait-monotrait ratio of correlations matrix (HTMT matrix)
+#>  ----------------------------------------------------------------
+#> 
+#>  Values in the lower triangular part are the absolute HTMT values
 #> 
 #>           eta1      eta2 eta3
 #> eta1 1.0000000 0.0000000    0
@@ -446,6 +449,9 @@ a
 #> 
 #> 
 #>  Advanced heterotrait-monotrait ratio of correlations matrix (HTMT2 matrix)
+#>  --------------------------------------------------------------------------
+#> 
+#>  Values in the lower triangular part are the absolute HTMT2 values
 #> 
 #>           eta1      eta2 eta3
 #> eta1 1.0000000 0.0000000    0
@@ -454,7 +460,7 @@ a
 #> 
 #> 
 #>  Fornell-Larcker matrix
-#> 
+#>  ----------------------
 #>           eta1      eta2      eta3
 #> eta1 0.4802903 0.4506886 0.4400530
 #> eta2 0.4506886 0.4922660 0.3757225
@@ -495,6 +501,15 @@ a$HTMT
 #> $nr_admissibles
 #> NULL
 #> 
+#> $inference
+#> [1] "none"
+#> 
+#> $absolute
+#> [1] TRUE
+#> 
+#> $ci
+#> [1] "CI_percentile"
+#> 
 
 # You may also just compute a subset of the quality criteria
 assess(res, .quality_criterion = c("ave", "rho_C", "htmt"))
@@ -515,6 +530,9 @@ assess(res, .quality_criterion = c("ave", "rho_C", "htmt"))
 #> ----------------------- Discriminant validity assessment -----------------------
 #> 
 #>  Heterotrait-monotrait ratio of correlations matrix (HTMT matrix)
+#>  ----------------------------------------------------------------
+#> 
+#>  Values in the lower triangular part are the absolute HTMT values
 #> 
 #>           eta1      eta2 eta3
 #> eta1 1.0000000 0.0000000    0
@@ -535,7 +553,7 @@ res <- csem(threecommonfactors, model,
 
 ## Look at the resamples
 res$Estimates$Estimates_resample$Estimates1$User_fun$Resampled[1:4, ]
-#> [1] 0.02746099 0.02320628 0.03012798 0.02654594
+#> [1] 0.02526248 0.02631479 0.02605559 0.02345114
 
 ## Use infer() to compute e.g., the 95% percentile confidence interval
 res_infer <- infer(res, .quantity = "CI_percentile")
@@ -544,8 +562,8 @@ res_infer <- infer(res, .quantity = "CI_percentile")
 res_infer$User_fun 
 #> $CI_percentile
 #>            [,1]
-#> 95%L 0.02011833
-#> 95%U 0.03605489
+#> 95%L 0.01847028
+#> 95%U 0.03338080
 #> 
 
 ## Several quality criteria can be resampled simultaneously
@@ -559,7 +577,7 @@ res <- csem(threecommonfactors, model,
             .tolerance = 1e-04
 )
 res$Estimates$Estimates_resample$Estimates1$SRMR$Resampled[1:4, ]
-#> [1] 0.02549724 0.02836766 0.02415314 0.02227156
+#> [1] 0.03392531 0.02635448 0.02368882 0.03064131
 res$Estimates$Estimates_resample$Estimates1$RMS_theta$Resampled[1:4]
-#> [1] 0.09776455 0.10507959 0.10186907 0.10632941
+#> [1] 0.1060566 0.1015256 0.1124495 0.1076774
 ```

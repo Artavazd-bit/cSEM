@@ -4,6 +4,16 @@
 
 ## cSEM 0.6.2
 
+- Extend calculateHTMT() to allow for asymptotic inference for the HTMT.
+  Thanks to Jason Berger for his contribution.
+
+- Fix bug in calculating the moments used to estimate non-linear models.
+
+- Fix bug in testMICOM(). Thanks to manzi0 for this contribution!
+
+- Fix issue with setting a seed in non-interactive session. Thanks to
+  Kjell S. Slupphaug and Jason Berger for their contribution.
+
 - Fix bug in PLS-PM estimation of non-linear models involing
   second-order constructs. Thanks Thanks to Kjell S. Slupphaug for this
   contribution.

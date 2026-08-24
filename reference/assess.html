@@ -423,6 +423,9 @@ See <code><a href="resamplecSEMResults.html">resamplecSEMResults()</a></code> fo
 <span class="r-out co"><span class="r-pr">#&gt;</span> ----------------------- Discriminant validity assessment -----------------------</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 	Heterotrait-monotrait ratio of correlations matrix (HTMT matrix)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 	----------------------------------------------------------------</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 	Values in the lower triangular part are the absolute HTMT values</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           eta1      eta2 eta3</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> eta1 1.0000000 0.0000000    0</span>
@@ -431,6 +434,9 @@ See <code><a href="resamplecSEMResults.html">resamplecSEMResults()</a></code> fo
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 	Advanced heterotrait-monotrait ratio of correlations matrix (HTMT2 matrix)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 	--------------------------------------------------------------------------</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 	Values in the lower triangular part are the absolute HTMT2 values</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           eta1      eta2 eta3</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> eta1 1.0000000 0.0000000    0</span>
@@ -439,7 +445,7 @@ See <code><a href="resamplecSEMResults.html">resamplecSEMResults()</a></code> fo
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 	Fornell-Larcker matrix</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 	----------------------</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           eta1      eta2      eta3</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> eta1 0.4802903 0.4506886 0.4400530</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> eta2 0.4506886 0.4922660 0.3757225</span>
@@ -480,6 +486,15 @@ See <code><a href="resamplecSEMResults.html">resamplecSEMResults()</a></code> fo
 <span class="r-out co"><span class="r-pr">#&gt;</span> $nr_admissibles</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> NULL</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $inference</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "none"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $absolute</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] TRUE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $ci</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "CI_percentile"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># You may also just compute a subset of the quality criteria</span></span></span>
 <span class="r-in"><span><span class="fu">assess</span><span class="op">(</span><span class="va">res</span>, .quality_criterion <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ave"</span>, <span class="st">"rho_C"</span>, <span class="st">"htmt"</span><span class="op">)</span><span class="op">)</span></span></span>
@@ -500,6 +515,9 @@ See <code><a href="resamplecSEMResults.html">resamplecSEMResults()</a></code> fo
 <span class="r-out co"><span class="r-pr">#&gt;</span> ----------------------- Discriminant validity assessment -----------------------</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 	Heterotrait-monotrait ratio of correlations matrix (HTMT matrix)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 	----------------------------------------------------------------</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 	Values in the lower triangular part are the absolute HTMT values</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           eta1      eta2 eta3</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> eta1 1.0000000 0.0000000    0</span>
@@ -520,7 +538,7 @@ See <code><a href="resamplecSEMResults.html">resamplecSEMResults()</a></code> fo
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">## Look at the resamples</span></span></span>
 <span class="r-in"><span><span class="va">res</span><span class="op">$</span><span class="va">Estimates</span><span class="op">$</span><span class="va">Estimates_resample</span><span class="op">$</span><span class="va">Estimates1</span><span class="op">$</span><span class="va">User_fun</span><span class="op">$</span><span class="va">Resampled</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span>, <span class="op">]</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.02746099 0.02320628 0.03012798 0.02654594</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.02526248 0.02631479 0.02605559 0.02345114</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">## Use infer() to compute e.g., the 95% percentile confidence interval</span></span></span>
 <span class="r-in"><span><span class="va">res_infer</span> <span class="op">&lt;-</span> <span class="fu"><a href="infer.html">infer</a></span><span class="op">(</span><span class="va">res</span>, .quantity <span class="op">=</span> <span class="st">"CI_percentile"</span><span class="op">)</span></span></span>
@@ -529,8 +547,8 @@ See <code><a href="resamplecSEMResults.html">resamplecSEMResults()</a></code> fo
 <span class="r-in"><span><span class="va">res_infer</span><span class="op">$</span><span class="va">User_fun</span> </span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $CI_percentile</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>            [,1]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 95%L 0.02011833</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 95%U 0.03605489</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 95%L 0.01847028</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 95%U 0.03338080</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">## Several quality criteria can be resampled simultaneously</span></span></span>
@@ -544,9 +562,9 @@ See <code><a href="resamplecSEMResults.html">resamplecSEMResults()</a></code> fo
 <span class="r-in"><span>            .tolerance <span class="op">=</span> <span class="fl">1e-04</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">res</span><span class="op">$</span><span class="va">Estimates</span><span class="op">$</span><span class="va">Estimates_resample</span><span class="op">$</span><span class="va">Estimates1</span><span class="op">$</span><span class="va">SRMR</span><span class="op">$</span><span class="va">Resampled</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span>, <span class="op">]</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.02549724 0.02836766 0.02415314 0.02227156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.03392531 0.02635448 0.02368882 0.03064131</span>
 <span class="r-in"><span><span class="va">res</span><span class="op">$</span><span class="va">Estimates</span><span class="op">$</span><span class="va">Estimates_resample</span><span class="op">$</span><span class="va">Estimates1</span><span class="op">$</span><span class="va">RMS_theta</span><span class="op">$</span><span class="va">Resampled</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.09776455 0.10507959 0.10186907 0.10632941</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.1060566 0.1015256 0.1124495 0.1076774</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
